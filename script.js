@@ -11,19 +11,19 @@ let targetContenitore = document.getElementById("conteniner");
     if(i%3==0 && i%5==0){
         /*stampa*/
         console.log("FizzBuzz");
-        targetContenitore.innerHTML += ('<div class="casella col">fizzBuzz </div>');
+        targetContenitore.innerHTML += ('<div class="casella col bg-red"><div class="elemento special"> fizzBuzz </div></div>');
     }else if(i%3==0){
         /*stampa*/
         console.log("Fizz");
-        targetContenitore.innerHTML += ('<div class="casella col">Fizz </div>');
+        targetContenitore.innerHTML += ('<div class="casella col bg-purple"><div class="elemento"> Fizz </div></div>');
     }
     else if(i%5==0){
         /*stampa*/
         console.log("Buzz");
-        targetContenitore.innerHTML += ('<div class="casella col">Buzz </div>');
+        targetContenitore.innerHTML += ('<div class="casella col bg-fucsia"><div class="elemento"> Buzz </div></div>');
     }else{
         /*stampa*/
-        targetContenitore.innerHTML += (`<div class="casella col"> ${i} </div>`);
+        targetContenitore.innerHTML += (`<div class="casella col bg-grey"> <div class="elemento">${i}</div> </div>`);
     };
     
     };
